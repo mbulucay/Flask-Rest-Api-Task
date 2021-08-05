@@ -1,0 +1,40 @@
+swagger: "2.0"
+info:
+  title: Album Api
+  description: API description in Markdown.
+  version: 1.0.0
+  
+host: localhost:5000
+basePath: /v1
+schemes:
+  - https
+paths:
+  /Users:
+    get:
+      operationId: SeeAllUsers
+      summary: Returns a list of users.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /Users/{id}/albums:
+    get:
+      operationId: SeeAlbumOfaUser
+      summary: Returns the albums of user with getting id
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: Id of the user
+          required: true
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: OK
+        default:
+          description: unexpected error
+
+        
