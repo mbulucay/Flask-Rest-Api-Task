@@ -1,22 +1,13 @@
-### Activate Virtual Environment
-```
-myprojects$ venv/Script/activate
-```
-###Installing requirements
+### Virtual Environment
+https://flask.palletsprojects.com/en/2.0.x/installation/
+
+### Installing requirements
 ```
 app$ pip install -r requirements.txt
 ```
 
 ### Run Flask Rest Api
-```
-app$ set FLASK_APP=app.py (Windows)
-app$ export FLASK_APP=hello (Bash)
-app$ FLASK_APP = "hello" (Power Shell)
-```
-```
-app$ flask run
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
+https://flask.palletsprojects.com/en/2.0.x/quickstart/
 
 ### Usage of Api
 
@@ -34,4 +25,4 @@ http://localhost:5000/swagger
 ![Users](img/swaggerid.png)
 
 **NOTE**:
-Swagger id is not working but route working in search bar
+Swagger id is not working but route working in search bar and postman
